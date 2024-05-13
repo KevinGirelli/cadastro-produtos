@@ -1,0 +1,14 @@
+<div class="cadastrar-conteiner">
+  <h2>Cadastro de Produtos</h2>
+
+  <label class="label" for="nome">Digite o nome: </label>
+  <input type="text" class="input-field" [(ngModel)]="nome">
+
+  <label class="label" for="categoria">Digite a categoria: </label>
+  <input type="text" class="input-field" [(ngModel)]="categoria">
+
+  <label class="label" for="mercado">Digite o cercado: </label>
+  <textarea type="text" class="input-field" [(ngModel)]="mercado"></textarea>
+
+  <button class="btn" (click)="cadastrarProduto()">Cadastrar Produto</button>
+</div>
