@@ -18,7 +18,6 @@ export class CadastroProdutoComponent {
   nome!: String;
   categoria!: String;
   mercado!: String;
-  cadastroProduto: any;
 
   constructor(cadastroProduto: ProdutoService) {}
 
