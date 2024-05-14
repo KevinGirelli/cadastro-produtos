@@ -15,4 +15,8 @@ export class ProdutoService {
     })}
     return this.httpClient.post("http://localhost:8080/cadastro", cadastrarProduto, httpOptions);
   }
+
+  getProdutos(): Observable<any[]> {
+    return this.httpClient.get<any[]>("http://localhost:8080/listar");
+  }
 }

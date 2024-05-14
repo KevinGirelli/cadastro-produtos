@@ -1,0 +1,20 @@
+<div class="listar-container">
+  <h2>Listagem de Produtos</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Categoria</th>
+        <th>Mercado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let produto of produtos">
+        <td>{{ produto.nome }}</td>
+        <td>{{ produto.categoria }}</td>
+        <td>{{ produto.mercado }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
