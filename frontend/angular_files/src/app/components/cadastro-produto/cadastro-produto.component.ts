@@ -6,6 +6,9 @@ import { ProdutoService } from '../../services/produto.service';
 @Component({
   selector: 'app-cadastro-produto',
   standalone: true,
+  providers: [
+    ProdutoService
+  ],
   imports: [
     FormsModule,
     HttpClientModule
@@ -19,7 +22,7 @@ export class CadastroProdutoComponent {
   categoria!: String;
   mercado!: String;
 
-  constructor(cadastroProduto: ProdutoService) {}
+  constructor(private cadastroProduto: ProdutoService) {}
 
   cadastrarProduto() {
     const dados = {

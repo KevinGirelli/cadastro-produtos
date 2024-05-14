@@ -13,6 +13,6 @@ export class ProdutoService {
     const httpOptions = {headers: new HttpHeaders({
       "Content-type": "application/json"
     })}
-    return this.httpClient.post("http://localhost:8080/cadastrar", cadastrarProduto, httpOptions);
+    return this.httpClient.post("http://localhost:8080/cadastro", cadastrarProduto, httpOptions);
   }
 }
